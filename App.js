@@ -1,7 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { useFonts } from 'expo-font';
+
 
 export default function App() {
+ 
+  Const [fontsLeoad] = useFonts
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.textBox}>
@@ -13,10 +17,10 @@ export default function App() {
          <TouchableOpacity style={styles.textBox}>
           <Text>JÁ POSSUO CADASTRO</Text>
          </TouchableOpacity>
-         <Text>OU<Text></Text>
+         <Text>OU</Text>
       <StatusBar style="auto"/>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
